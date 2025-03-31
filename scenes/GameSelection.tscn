@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ixfoylishep"]
+
+[ext_resource type="Script" uid="uid://ctbwtwfjeqve2" path="res://Scripts/GameSelection.gd" id="1_ah3v2"]
+
+[node name="GameSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ah3v2")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Juego1" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "juego 1"
+
+[node name="Juego2" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "juego 2"
+
+[node name="Juego3" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "juego 3"
+
+[node name="Juego4" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "juego 4"
+
+[node name="Juego5" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "juego 5"

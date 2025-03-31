@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://je5kfgd57xfj"]
+
+[ext_resource type="Script" uid="uid://3r3rhwt4utbo" path="res://Scripts/MainMenu.gd" id="1_yqorp"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_yqorp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 21.0
+offset_right = 1151.0
+offset_bottom = 59.0
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Inicio sesion" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "inicio sesion
+"
+
+[node name="Jugar" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Jugar"
+
+[node name="Historias" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Historias
+"

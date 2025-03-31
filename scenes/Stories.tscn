@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://djy3khe30prst"]
+
+[ext_resource type="Script" uid="uid://dtfux21hwmr4t" path="res://Scripts/Stories.gd" id="1_vnerg"]
+
+[node name="Stories" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vnerg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 85.0
+offset_right = 304.0
+offset_bottom = 210.0
+text = "hhhgdhghbklnklbmbm.,n,mbnbvbvcvxcxzcxx textttttttttt"
