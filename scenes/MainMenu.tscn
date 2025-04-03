@@ -2,13 +2,10 @@
 
 [ext_resource type="Script" uid="uid://3r3rhwt4utbo" path="res://Scripts/MainMenu.gd" id="1_yqorp"]
 
-[node name="MainMenu" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[node name="MainMenu" type="Node2D"]
 script = ExtResource("1_yqorp")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 0
 offset_top = 21.0
 offset_right = 1151.0
 offset_bottom = 59.0
