@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://e2y4wuq5v3rk"]
+
+[ext_resource type="Script" uid="uid://cwcccpq5m8y7s" path="res://Scripts/Tateti.gd" id="1_nv62g"]
+[ext_resource type="Texture2D" uid="uid://dupwwlwle5qtn" path="res://scenes/games/fondoTateti.jpg" id="2_lq75y"]
+
+[node name="Game5Tateti" type="Node2D"]
+script = ExtResource("1_nv62g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(653.5, 278.25)
+scale = Vector2(3.13562, 3.02364)
+texture = ExtResource("2_lq75y")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 386.0
+offset_top = 202.0
+offset_right = 694.0
+offset_bottom = 510.0
+columns = 3
+
+[node name="Button0" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button1" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ReiniciarButton" type="Button" parent="."]
+offset_left = 751.0
+offset_top = 509.0
+offset_right = 827.0
+offset_bottom = 549.0
+text = "Reiniciar"
+
+[node name="ResultadoLabel" type="Label" parent="."]
+offset_left = 450.0
+offset_top = 321.0
+offset_right = 632.0
+offset_bottom = 387.0
+theme_override_font_sizes/font_size = 24
+
+[connection signal="pressed" from="ReiniciarButton" to="." method="_on_reiniciar_pressed"]

@@ -13,4 +13,23 @@ offset_left = 148.0
 offset_top = 85.0
 offset_right = 304.0
 offset_bottom = 210.0
-text = "hhhgdhghbklnklbmbm.,n,mbnbvbvcvxcxzcxx textttttttttt"
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Juego1" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+
+[node name="Juego2" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+
+[node name="Juego3" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+
+[node name="Juego4" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+
+[node name="Juego5" type="Button" parent="ButtonContainer"]
+layout_mode = 2

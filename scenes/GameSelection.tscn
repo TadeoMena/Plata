@@ -28,6 +28,9 @@ text = "juego 3"
 layout_mode = 2
 text = "juego 4"
 
-[node name="Juego5" type="Button" parent="GridContainer"]
+[node name="Tateti" type="Button" parent="GridContainer"]
+clip_contents = true
 layout_mode = 2
-text = "juego 5"
+text = "Tateti"
+
+[connection signal="pressed" from="GridContainer/Tateti" to="." method="_on_tateti_pressed"]
