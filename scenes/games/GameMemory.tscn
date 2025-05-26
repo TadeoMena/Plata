@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c5nox7b0swc5y"]
+
+[node name="GameMemory" type="Node2D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 75.0
+offset_top = 140.0
+offset_right = 240.0
+offset_bottom = 180.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Vistaprevia" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Vista previa"
+
+[node name="Clasico" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Clásico"
+
+[node name="Cardgrid" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 4
