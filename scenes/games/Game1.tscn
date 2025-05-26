@@ -1,4 +1,10 @@
-[gd_scene format=3 uid="uid://dwfpm327g68no"]
+[gd_scene load_steps=4 format=3 uid="uid://dwfpm327g68no"]
+
+[ext_resource type="Texture2D" uid="uid://jr3fr3uat62v" path="res://Card Asset/Uno/individual/blue/0_blue.png" id="1_8cnhg"]
+[ext_resource type="Script" uid="uid://dfkldtqvvrt2m" path="res://scenes/games/holder.gd" id="1_hrxab"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1ls7"]
+size = Vector2(164, 256)
 
 [node name="Game1" type="Control"]
 layout_mode = 3
@@ -10,8 +16,10 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 263.0
+offset_top = 2.0
+offset_right = 320.0
+offset_bottom = 25.0
 text = "Juego 1"
 
 [node name="Volver" type="Button" parent="."]
@@ -20,3 +28,20 @@ offset_left = 365.0
 offset_right = 477.0
 offset_bottom = 31.0
 text = "Volver"
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="holder" type="Node2D" parent="Node2D"]
+script = ExtResource("1_hrxab")
+
+[node name="card" type="Node2D" parent="Node2D/holder"]
+position = Vector2(157, 176)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/holder/card"]
+texture = ExtResource("1_8cnhg")
+
+[node name="Area2D" type="Area2D" parent="Node2D/holder/card"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/holder/card/Area2D"]
+visible = false
+shape = SubResource("RectangleShape2D_c1ls7")
